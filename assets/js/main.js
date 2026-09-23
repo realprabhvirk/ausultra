@@ -57,6 +57,10 @@
   var scrollCue = document.getElementById('heroScrollCue');
 
   if (heroScroll && video) {
+    // The video finishes at VIDEO_FRACTION of the pinned scroll range; the remaining
+    // tail just holds on the final frame (still pinned) so the finished shot is
+    // actually visible for a beat before the section releases into the page below.
+    var VIDEO_FRACTION = 0.7;
     var duration = 0;
     var ready = false;
     var heroTop = 0;
@@ -82,9 +86,9 @@
 
     function updateTarget() {
       var scrollY = window.scrollY || window.pageYOffset;
-      var raw = (scrollY - heroTop) / scrollRange;
-      targetProgress = Math.min(Math.max(raw, 0), 1);
-      if (scrollCue) scrollCue.classList.toggle('is-hidden', targetProgress > 0.03);
+      var pinProgress = Math.min(Math.max((scrollY - heroTop) / scrollRange, 0), 1);
+      targetProgress = Math.min(Math.max(pinProgress / VIDEO_FRACTION, 0), 1);
+      if (scrollCue) scrollCue.classList.toggle('is-hidden', pinProgress > 0.03);
       startLoop();
     }
 
@@ -100,7 +104,10 @@
         renderFrame();
         return;
       }
-      currentProgress += delta * 0.14;
+      // Track real scroll position closely (light smoothing only, not a lag-behind
+      // animation) so a fast scroll never leaves the video visibly behind where
+      // the page actually is.
+      currentProgress += delta * 0.35;
       renderFrame();
       rafId = requestAnimationFrame(tick);
     }

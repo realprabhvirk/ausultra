@@ -178,7 +178,7 @@ i[data-lucide] { display: inline-block; }
 /* ---------- Hero (cinematic scroll video) ---------- */
 .hero-scroll {
   position: relative;
-  height: 350vh;
+  height: 240vh;
   background: #000;
 }
 .hero-sticky {
@@ -458,7 +458,7 @@ i[data-lucide] { display: inline-block; }
   .services-grid, .projects-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .section-split { grid-template-columns: 1fr; gap: 32px; }
   .footer__grid { grid-template-columns: 1fr 1fr; }
-  .hero-scroll { height: 300vh; }
+  .hero-scroll { height: 210vh; }
 }
 
 @media (max-width: 720px) {
@@ -480,7 +480,7 @@ i[data-lucide] { display: inline-block; }
   .footer__grid { grid-template-columns: 1fr; padding: 40px 20px; }
   .footer__bottom { flex-direction: column; padding: 16px 20px; }
   .section { padding: 56px 20px; }
-  .hero-scroll { height: 260vh; }
+  .hero-scroll { height: 190vh; }
 }
 
 @media (max-width: 480px) {
