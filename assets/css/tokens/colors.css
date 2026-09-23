@@ -1,0 +1,16 @@
+:root{
+--color-bg:#0d0f0f;
+--color-surface:#17191a;
+--color-surface-raised:#1d2020;
+--color-border:#2b2d2d;
+--color-border-strong:#3a3c3c;
+--color-primary:#c17a45;
+--color-primary-hover:#a8632f;
+--color-primary-tint:#e8b98a;
+--color-white:#ffffff;
+--color-text-body:#a8adad;
+--color-text-muted:#7c8282;
+--color-overlay:rgba(13,15,15,.72);
+--color-success:#6fae72;
+--color-danger:#c15a4a;
+}

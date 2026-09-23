@@ -1,0 +1,9 @@
+:root{
+--shadow-card:0 8px 24px rgba(0,0,0,.35);
+--shadow-btn:0 6px 18px rgba(193,122,69,.35);
+--shadow-nav:0 4px 20px rgba(0,0,0,.4);
+--border-hairline:1px solid var(--color-border);
+--ease-standard:cubic-bezier(.4,0,.2,1); /* @kind other */
+--duration-fast:150ms; /* @kind other */
+--duration-base:220ms; /* @kind other */
+}
