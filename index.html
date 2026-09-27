@@ -16,62 +16,37 @@
   <img class="navbar__logo" src="assets/img/logo.png" alt="AusUltra Landscaping">
   <nav>
     <ul class="navbar__links">
-      <li><a href="#" class="is-active">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html" class="is-active">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
   <div class="navbar__right">
     <div class="navbar__phone"><i data-lucide="phone" class="icon-nav-phone"></i>0415 795 055</div>
-    <a href="#contact" class="btn btn-primary btn-sm">Get a Quote</a>
+    <a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a>
   </div>
   <button class="navbar__toggle" aria-label="Toggle menu" id="navToggle"><i data-lucide="menu" class="icon-toggle"></i></button>
 </header>
 
-<!-- Cinematic scroll-scrubbed hero video -->
-<section class="hero-scroll" id="heroScroll" aria-label="Intro">
-  <div class="hero-sticky">
-    <div class="hero-video-frame">
-      <div class="hero-video-scale" id="heroVideoScale">
-        <video
-          class="hero-video"
-          id="heroVideo"
-          muted
-          playsinline
-          webkit-playsinline="true"
-          preload="auto"
-          disablePictureInPicture
-          disableRemotePlayback
-          controlsList="nodownload nofullscreen noremoteplayback"
-          aria-hidden="true"
-        >
-          <source src="assets/video/hero-timelapse.webm" type="video/webm">
-          <source src="assets/video/hero-timelapse.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="hero-video-overlay"></div>
-    </div>
+<!-- Hero -->
+<section class="hero" aria-label="Intro">
+  <img class="hero-bg" src="assets/img/hero-still.jpg" alt="Completed AusUltra Landscaping project at dusk, featuring a stone retaining wall, turf and lit steps">
+  <div class="hero-overlay"></div>
 
-    <div class="hero-content container" id="heroContent">
-      <div class="eyebrow">Brisbane Landscaping Experts</div>
-      <h1 class="hero-title">Transforming<br><span class="text-accent">Outdoor Spaces.</span></h1>
-      <p class="hero-desc">Concrete, retaining walls, fencing, turf and complete landscaping solutions. Built to last.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Get a Free Quote <i data-lucide="arrow-right" class="icon-btn"></i></a>
-        <a href="#projects" class="btn btn-secondary">View Our Work <i data-lucide="play" class="icon-btn"></i></a>
-      </div>
-      <div class="hero-badges">
-        <div class="badge"><i data-lucide="shield-check" class="icon-badge"></i><span>Quality Workmanship</span></div>
-        <div class="badge"><i data-lucide="calendar" class="icon-badge"></i><span>On Time &amp; Reliable</span></div>
-        <div class="badge"><i data-lucide="users" class="icon-badge"></i><span>Local Brisbane Business</span></div>
-      </div>
+  <div class="hero-content container">
+    <div class="eyebrow">Brisbane Landscaping Experts</div>
+    <h1 class="hero-title">Transforming<br><span class="text-accent">Outdoor Spaces.</span></h1>
+    <p class="hero-desc">Concrete, retaining walls, fencing, turf and complete landscaping solutions. Built to last.</p>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn btn-primary">Get a Free Quote <i data-lucide="arrow-right" class="icon-btn"></i></a>
+      <a href="projects.html" class="btn btn-secondary">View Our Work <i data-lucide="play" class="icon-btn"></i></a>
     </div>
-
-    <div class="hero-scroll-cue" id="heroScrollCue">
-      <span>Scroll</span>
-      <i data-lucide="chevron-down" class="icon-scroll-cue"></i>
+    <div class="hero-badges">
+      <div class="badge"><i data-lucide="shield-check" class="icon-badge"></i><span>Quality Workmanship</span></div>
+      <div class="badge"><i data-lucide="calendar" class="icon-badge"></i><span>On Time &amp; Reliable</span></div>
+      <div class="badge"><i data-lucide="users" class="icon-badge"></i><span>Local Brisbane Business</span></div>
     </div>
   </div>
 </section>
@@ -84,59 +59,59 @@
       <h2 class="section-title">Landscaping<br>Solutions<br>Built For You.</h2>
     </div>
     <p>From concrete driveways to complete backyard transformations, AusUltra Landscaping delivers high-quality, functional and modern outdoor spaces across Brisbane and surrounding areas.</p>
-    <a href="#services" class="btn btn-secondary btn-sm">View All Services</a>
+    <a href="services.html" class="btn btn-secondary btn-sm">View All Services</a>
   </div>
   <div class="services-grid">
-    <a href="#" class="service-card">
+    <a href="services.html#driveways" class="service-card">
       <div class="service-card__image"><img src="assets/img/project-driveway.jpg" alt="Concrete Sidewalks &amp; Driveways" loading="lazy"></div>
       <div class="service-card__body">
         <div class="service-card__label"><i data-lucide="milestone" class="icon-service"></i><span>Concrete Sidewalks &amp; Driveways</span></div>
         <div class="service-card__arrow"><i data-lucide="arrow-right" class="icon-service-arrow"></i></div>
       </div>
     </a>
-    <a href="#" class="service-card">
+    <a href="services.html#retaining-walls" class="service-card">
       <div class="service-card__image"><img src="assets/img/project-retaining-wall.jpg" alt="Retaining Walls" loading="lazy"></div>
       <div class="service-card__body">
         <div class="service-card__label"><i data-lucide="brick-wall" class="icon-service"></i><span>Retaining Walls</span></div>
         <div class="service-card__arrow"><i data-lucide="arrow-right" class="icon-service-arrow"></i></div>
       </div>
     </a>
-    <a href="#" class="service-card">
-      <div class="service-card__image"><img src="assets/img/hero-photo.jpg" alt="House Front Elevations" loading="lazy"></div>
+    <a href="services.html#front-elevations" class="service-card">
+      <div class="service-card__image"><img src="assets/img/project-front-elevation.jpg" alt="House Front Elevations" loading="lazy"></div>
       <div class="service-card__body">
         <div class="service-card__label"><i data-lucide="home" class="icon-service"></i><span>House Front Elevations</span></div>
         <div class="service-card__arrow"><i data-lucide="arrow-right" class="icon-service-arrow"></i></div>
       </div>
     </a>
-    <a href="#" class="service-card">
-      <div class="service-card__image"><img src="assets/img/hero-photo.jpg" alt="Backyard Transformation" loading="lazy"></div>
+    <a href="services.html#backyard" class="service-card">
+      <div class="service-card__image"><img src="assets/img/project-backyard.jpg" alt="Backyard Transformation" loading="lazy"></div>
       <div class="service-card__body">
         <div class="service-card__label"><i data-lucide="trees" class="icon-service"></i><span>Backyard Transformation</span></div>
         <div class="service-card__arrow"><i data-lucide="arrow-right" class="icon-service-arrow"></i></div>
       </div>
     </a>
-    <a href="#" class="service-card">
+    <a href="services.html#fencing" class="service-card">
       <div class="service-card__image"><img src="assets/img/project-retaining-wall.jpg" alt="Timber &amp; Colorbond Fencing" loading="lazy"></div>
       <div class="service-card__body">
         <div class="service-card__label"><i data-lucide="fence" class="icon-service"></i><span>Timber &amp; Colorbond Fencing</span></div>
         <div class="service-card__arrow"><i data-lucide="arrow-right" class="icon-service-arrow"></i></div>
       </div>
     </a>
-    <a href="#" class="service-card">
-      <div class="service-card__image"><img src="assets/img/texture-pathway.jpg" alt="Artificial/Natural Turf Installation" loading="lazy"></div>
+    <a href="services.html#turf" class="service-card">
+      <div class="service-card__image"><img src="assets/img/project-turf.jpg" alt="Artificial/Natural Turf Installation" loading="lazy"></div>
       <div class="service-card__body">
         <div class="service-card__label"><i data-lucide="sprout" class="icon-service"></i><span>Artificial/Natural Turf Installation</span></div>
         <div class="service-card__arrow"><i data-lucide="arrow-right" class="icon-service-arrow"></i></div>
       </div>
     </a>
-    <a href="#" class="service-card">
+    <a href="services.html#epoxy-coatings" class="service-card">
       <div class="service-card__image"><img src="assets/img/project-driveway.jpg" alt="Epoxy Coatings" loading="lazy"></div>
       <div class="service-card__body">
         <div class="service-card__label"><i data-lucide="layers" class="icon-service"></i><span>Epoxy Coatings</span></div>
         <div class="service-card__arrow"><i data-lucide="arrow-right" class="icon-service-arrow"></i></div>
       </div>
     </a>
-    <a href="#" class="service-card">
+    <a href="services.html#epoxy-flake" class="service-card">
       <div class="service-card__image"><img src="assets/img/project-driveway.jpg" alt="Epoxy Flake Flooring" loading="lazy"></div>
       <div class="service-card__body">
         <div class="service-card__label"><i data-lucide="grid-2x2" class="icon-service"></i><span>Epoxy Flake Flooring</span></div>
@@ -153,7 +128,7 @@
     <h2 class="section-title" style="margin-bottom:18px">More Than<br>Landscaping.</h2>
     <p style="font-size:14.5px; line-height:var(--lh-relaxed); margin:0 0 14px">We take pride in delivering high-quality landscaping solutions that enhance your home, add value and are built to last.</p>
     <p style="font-size:14.5px; line-height:var(--lh-relaxed); margin:0 0 28px">From concept to completion, we focus on quality, reliability and attention to detail.</p>
-    <a href="#about" class="btn btn-secondary btn-sm">About Us</a>
+    <a href="about.html" class="btn btn-secondary btn-sm">About Us</a>
   </div>
   <div class="feature-list">
     <div class="feature-item">
@@ -188,10 +163,10 @@
       <h2 class="section-title">Recent <span class="text-accent">Projects</span></h2>
       <p>See the difference a well-designed outdoor space can make.</p>
     </div>
-    <a href="#projects" class="btn btn-secondary btn-sm">View All Projects</a>
+    <a href="projects.html" class="btn btn-secondary btn-sm">View All Projects</a>
   </div>
   <div class="projects-grid">
-    <a href="#" class="project-card">
+    <a href="projects.html#concrete-driveway" class="project-card">
       <div class="project-card__image"><img src="assets/img/project-driveway.jpg" alt="Concrete Driveway" loading="lazy"></div>
       <div class="project-card__meta">
         <div>
@@ -201,7 +176,7 @@
         <i data-lucide="arrow-right" class="icon-project-arrow"></i>
       </div>
     </a>
-    <a href="#" class="project-card">
+    <a href="projects.html#retaining-wall" class="project-card">
       <div class="project-card__image"><img src="assets/img/project-retaining-wall.jpg" alt="Retaining Wall" loading="lazy"></div>
       <div class="project-card__meta">
         <div>
@@ -211,8 +186,8 @@
         <i data-lucide="arrow-right" class="icon-project-arrow"></i>
       </div>
     </a>
-    <a href="#" class="project-card">
-      <div class="project-card__image"><img src="assets/img/hero-photo.jpg" alt="Backyard Transformation" loading="lazy"></div>
+    <a href="projects.html#backyard-transformation" class="project-card">
+      <div class="project-card__image"><img src="assets/img/project-backyard.jpg" alt="Backyard Transformation" loading="lazy"></div>
       <div class="project-card__meta">
         <div>
           <div class="project-card__title">Backyard Transformation</div>
@@ -221,8 +196,8 @@
         <i data-lucide="arrow-right" class="icon-project-arrow"></i>
       </div>
     </a>
-    <a href="#" class="project-card">
-      <div class="project-card__image"><img src="assets/img/texture-pathway.jpg" alt="Turf Installation" loading="lazy"></div>
+    <a href="projects.html#turf-installation" class="project-card">
+      <div class="project-card__image"><img src="assets/img/project-turf.jpg" alt="Turf Installation" loading="lazy"></div>
       <div class="project-card__meta">
         <div>
           <div class="project-card__title">Turf Installation</div>
@@ -271,24 +246,24 @@
     <div>
       <div class="footer__heading">Quick Links</div>
       <div class="footer__links">
-        <a href="#">Home</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
     <div>
       <div class="footer__heading">Our Services</div>
       <div class="footer__links">
-        <a href="#services">Concrete &amp; Driveways</a>
-        <a href="#services">Retaining Walls</a>
-        <a href="#services">Front Yard Elevations</a>
-        <a href="#services">Backyard Transformations</a>
-        <a href="#services">Fencing</a>
-        <a href="#services">Turf Installation</a>
-        <a href="#services">Epoxy Coatings</a>
-        <a href="#services">Epoxy Flake Flooring</a>
+        <a href="services.html#driveways">Concrete &amp; Driveways</a>
+        <a href="services.html#retaining-walls">Retaining Walls</a>
+        <a href="services.html#front-elevations">Front Yard Elevations</a>
+        <a href="services.html#backyard">Backyard Transformations</a>
+        <a href="services.html#fencing">Fencing</a>
+        <a href="services.html#turf">Turf Installation</a>
+        <a href="services.html#epoxy-coatings">Epoxy Coatings</a>
+        <a href="services.html#epoxy-flake">Epoxy Flake Flooring</a>
       </div>
     </div>
     <div>
@@ -298,7 +273,7 @@
         <li><i data-lucide="mail" class="icon-footer-contact"></i>AusUltraLandscaping@gmail.com</li>
         <li><i data-lucide="map-pin" class="icon-footer-contact"></i>Brisbane, QLD</li>
       </ul>
-      <a href="#contact" class="btn btn-primary btn-sm">Get a Quote</a>
+      <a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a>
     </div>
   </div>
   <div class="footer__bottom">
